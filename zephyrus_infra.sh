@@ -24,8 +24,6 @@ subNet_ID=$(aws ec2 describe-subnets \
  --query "Subnets[0].[SubnetId]" \
  --output text)
 
-chmod 400 ~/$zephyrus-instancia.pem
-
 echo -e "\n+---------+Criando instância+---------+"
 user_data=$(cat <<COMANDOS
     #!/bin/bash
@@ -38,12 +36,13 @@ aws ec2 run-instances \
  --count 1 \
  --security-group-ids sg-02dc45f81a6b3d912 \
  --instance-type t3.small \
- --subnet-id  \
+ --subnet-id $subNet_ID\
  --key-name zephyrus-instancia \
  --block-device-mappings '[{"DeviceName":"/dev/sda1","Ebs":{"VolumeSize":20, "VolumeType":"gp3","DeleteOnTermination":true}}]' \
- --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=web-server-01}]'\
+ --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Zephyrus-Web-Server}]'\
  --no-cli-pager \
- --user-data "$user_data" 
+ --user-data "$user_data" \
+ 
  
 
 echo -e "\n+---------+Instância criada!+---------+"
