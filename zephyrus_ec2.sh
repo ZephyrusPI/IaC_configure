@@ -56,6 +56,12 @@ services:
                         - "3306:3306"
                 networks:
                         - rede-zephyrus
+		volumes:
+		        - zephyrus_data:/var/lib/mysql
+		        - ./ScriptZephyrusDB3.0.sql:/docker-entrypoint-initdb.d/ScriptZephyrusDB3.0.sql
+
+volumes:
+  zephyrus_data:
 networks:
         rede-zephyrus:
                 driver: bridge

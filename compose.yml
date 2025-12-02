@@ -1,4 +1,4 @@
-services: 
+services:
         site:
                 image: gustavoalvesdeoliveira/site-zephyrus:latest
                 ports:
