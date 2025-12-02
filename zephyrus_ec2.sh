@@ -82,9 +82,9 @@ aws ec2 run-instances \
  --no-cli-pager \
  --user-data "$user_data" \
 
- 
 
-echo -e "\n+---------+Instância criada! Gustavo agradece sua preferencia!+---------+"
+
+echo -e "\n+---------+Instância criada! A Zephyrus agradece sua preferencia!+---------+"
 
 echo -e "\n+---------+Aguarde a instância iniciar caso queira ssh+---------+"
 
