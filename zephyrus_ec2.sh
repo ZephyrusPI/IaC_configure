@@ -2,9 +2,9 @@
 
 #Variáveis
 
-aws_access_key=""
-aws_secret_access_key=""
-aws_session_token=""
+aws_access_key="ASIAY4PB22DEBDD2WNAX"
+aws_secret_access_key="9B5ihYayBCD3UOlmox8M6NxuX07uF6riHluEmDwl"
+aws_session_token="IQoJb3JpZ2luX2VjED4aCXVzLXdlc3QtMiJGMEQCIC+Y4TF4cX9uuSErbuxAqBRfyqt8J59IVpXEGEP4WAPZAiAO1h3TPB8+fBLjzNSlw1QuyQBsLs1k+RfNJNxUthFlXCq9AggHEAAaDDYxMDg5NTg0MzUyOCIMquaVPv9VPC2MSWVpKpoC6T3GOzorvF4iXWD185EvUWvsZ1vfwcC2ehswBoBqwKOi9cYqWzz5ViLjOvnDhHGmBZBiyn1o+AzP3eoHdRiywFofjZo5rMQlocfpPf3Yp8Ys/r0e2jHlI82iRAQOkLv4/Vy4V8yyhF6mFXMQFgZxpDxVqXvpLGuVbqDUHUS3H5JdXggD/Cq7q/atH7bSJIRI5AdzHXQ77O9qVNdV/+cP1DvmS1R7JWwEEi4UQruFJu8MuD3K3dLV/8x910MPdb7jGFFu7+WGg/uojQkxMH+nQo+5LDPqP7BOYGRl5wCVdwwTo1Eb1N30/MdTkwu1hCT4mzyuspG2UPSBHITO/2vA7zQo3PgCrDFmGvpKakfI5hcO8CmiVGX91gRlMO6iuMkGOp4BqUn61p8e0gQJ1fASA7p/cUZyJ5LzvJ0SSmdFXr9VamasTA27l+gcpQzklPMGoBAJVpq4+cVd9onerS3fojEZVE/z2+tcG5n1AFODEI99UxVw7Gh97gmPKSwDZRbt0D/MjBkEJECAKXX/ejTU/wtJwtqQgPIi3Zz0SHjONqSknK97j46IqP6q1iCC4hL/p83F5lqb6Stjkj91WBZE0nE="
 regiao=us-east-1
 output=json
 nomeDaInstnacia=Homologacao
@@ -73,9 +73,9 @@ COMANDOS
 aws ec2 run-instances \
  --image-id $SO \
  --count $quantidadeInstancia \
- --security-group-ids sg-0947aba14e6c8a6c7 \
+ --security-group-ids sg-0707eaabcc4f9ec3e \
  --instance-type t3.small \
- --subnet-id subnet-0ee2c3ba1900fcc9a \
+ --subnet-id subnet-0029268067779be17 \
  --key-name $chavePem \
  --block-device-mappings '[{"DeviceName":"/dev/sda1","Ebs":{"VolumeSize":20, "VolumeType":"gp3","DeleteOnTermination":true}}]' \
  --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$nomeDaInstnacia}]"\
