@@ -41,7 +41,7 @@ apt install -y docker-ce docker-ce-cli containerd.io
 groupadd docker || true
 usermod -aG docker ubuntu
 cat << 'EOF' > /home/ubuntu/compose.yml
-services: 
+services:
         site:
                 image: gustavoalvesdeoliveira/site-zephyrus:latest
                 ports:
@@ -62,6 +62,7 @@ services:
 
 volumes:
   zephyrus_data:
+
 networks:
         rede-zephyrus:
                 driver: bridge
