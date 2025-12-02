@@ -2,9 +2,9 @@
 
 #Variáveis
 
-aws_access_key="ASIA4UGQCLHBXERFWXCW"
-aws_secret_access_key="6JIkN6rlagX4+CY/mJrbEjaNhiD6yr+xH0PHLVp/"
-aws_session_token="IQoJb3JpZ2luX2VjENL//////////wEaCXVzLXdlc3QtMiJHMEUCIE8hr70kqr6D/HhmyoO8Hzi5dZMDNFdkhjG88Yn8a+XKAiEAuLkfkxllim+yRNiGyBLaCoThiv0O4HtvIL/B5iVoE34qwgIIm///////////ARABGgw4NjgwMTk3NTU0NTkiDOKEG2Wr958n07KjLiqWApbGSz7ESWNh8s+PVm1+QBZLLum3Dflbepacj+ij/fcHpYz8E34IKcEfYmEODYZtxJ+ibMcYyjm4DgNfUcwQs3jWCOvfOS58Tv60bURjh3UweNr93xo3X2CjNHp8/Gw0XOHloqWMZN4nVJFrKg5k/PSMQnFTYYKT8/OmXOKbY+lOgbB3I9XT3hk+rtrX/9elsrhb4qY/hibmwJy5NZbKx6EhT5MEVHPtVwzWWz1rX9ySQ1pOyKcZMHOUoDISEk8o4JB/sFfrsxivyZ4c4I16E3bWwfUGAzwIKVdP02qmucXYvS/nR9P23TU64gv0VIc81CoSFO9l2Z5toe/YRjEoNUuvfwFVTK9oA9zo4vFtZhfupfr74WL6MJaHsMgGOp0BLfiC9D2zpONLh6qWoSgmdp5HzkJVP8o89aoDC4OzjVKeVoLABlTmv5h4/21SKKv2g6hdkXcpnWeyKFVAIDigRgVAdH1Z7RHBTF3tNOZQXTpnHWTv5UYIKx1J7FitYcLZitg5fCRqX6kwo99cHx09GL+3p7bzRAGHKEiBWTmiBHnkxPZWkIN3ewUmcXqtkBW2zON4bhIRGKcG7pkdaA=="
+aws_access_key=""
+aws_secret_access_key=""
+aws_session_token=""
 regiao=us-east-1
 output=json
 nomeDaInstnacia=Homologacao
