@@ -73,9 +73,9 @@ COMANDOS
 aws ec2 run-instances \
  --image-id $SO \
  --count $quantidadeInstancia \
- --security-group-ids sg-0707eaabcc4f9ec3e \
+ --security-group-ids sg-0947aba14e6c8a6c7 \
  --instance-type t3.small \
- --subnet-id subnet-0029268067779be17 \
+ --subnet-id subnet-0ee2c3ba1900fcc9a \
  --key-name $chavePem \
  --block-device-mappings '[{"DeviceName":"/dev/sda1","Ebs":{"VolumeSize":20, "VolumeType":"gp3","DeleteOnTermination":true}}]' \
  --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$nomeDaInstnacia}]"\
