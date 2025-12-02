@@ -42,30 +42,30 @@ groupadd docker || true
 usermod -aG docker ubuntu
 cat << 'EOF' > /home/ubuntu/compose.yml
 services:
-        site:
-                image: gustavoalvesdeoliveira/site-zephyrus:latest
-                ports:
-                        - "3333:3333"
-                networks:
-                        - rede-zephyrus
-                depends_on:
-                        - db-zephyrus
-        db-zephyrus:
-                image: gustavoalvesdeoliveira/db-zephyrus:latest
-                ports:
-                        - "3306:3306"
-                networks:
-                        - rede-zephyrus
-		volumes:
-		        - zephyrus_data:/var/lib/mysql
-		        - ./ScriptZephyrusDB3.0.sql:/docker-entrypoint-initdb.d/ScriptZephyrusDB3.0.sql
+  site:
+    image: gustavoalvesdeoliveira/site-zephyrus:latest
+    ports:
+      - "3333:3333"
+    networks:
+      - rede-zephyrus
+    depends_on:
+      - db-zephyrus
 
+  db-zephyrus:
+    image: gustavoalvesdeoliveira/db-zephyrus:latest
+    ports:
+      - "3306:3306"
+    networks:
+      - rede-zephyrus
+    volumes:
+      - zephyrus_data:/var/lib/mysql
 volumes:
   zephyrus_data:
 
 networks:
-        rede-zephyrus:
-                driver: bridge
+  rede-zephyrus:
+    driver: bridge
+
 EOF
 newgrp docker
 COMANDOS
