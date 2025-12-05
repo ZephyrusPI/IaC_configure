@@ -74,9 +74,9 @@ COMANDOS
 aws ec2 run-instances \
  --image-id $SO \
  --count $quantidadeInstancia \
- --security-group-ids sg-0947aba14e6c8a6c7 \
+ --security-group-ids sg-00d97e17200003dfc \
  --instance-type t3.small \
- --subnet-id subnet-0ee2c3ba1900fcc9a \
+ --subnet-id subnet-03919f6ba15beb316 \
  --key-name $chavePem \
  --block-device-mappings '[{"DeviceName":"/dev/sda1","Ebs":{"VolumeSize":20, "VolumeType":"gp3","DeleteOnTermination":true}}]' \
  --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$nomeDaInstnacia}]"\
@@ -85,7 +85,7 @@ aws ec2 run-instances \
 
  
 
-echo -e "\n+---------+Instância criada! Gustavo agradece sua preferencia!+---------+"
+echo -e "\n+---------+Instância criada! A Zpehyrus agradece sua preferencia!+---------+"
 
 echo -e "\n+---------+Aguarde a instância iniciar caso queira ssh+---------+"
 
